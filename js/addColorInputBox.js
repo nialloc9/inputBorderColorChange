@@ -1,5 +1,5 @@
 //ADD RED INPUT BOX
-function addInputBoxColor(boxId, pOrN){
+function addInputBoxColor(boxId, pOrN, positiveClass, negativeClass){
 
     //ASSIGN VARIABLES
     var id = '#' + boxId;
@@ -7,35 +7,35 @@ function addInputBoxColor(boxId, pOrN){
     //BOOLEAN CHECK
     if(pOrN){
         //CLASS CHECK 1
-        if($(id).hasClass('input-error')){
-            $(id).removeClass('input-error');
+        if($(id).hasClass(negativeClass)){
+            $(id).removeClass(negativeClass);
             //CLASS CHECK 2
-            if($(id).hasClass('input-success')){
+            if($(id).hasClass(positiveClass)){
                 //DO NOTHING
             }else{ //CLASS CHECK 2 ELSE
-                $(id).addClass('input-success');
+                $(id).addClass(positiveClass);
             }
         }else{ //CLASS CHECK 1 ELSE
-            if($(id).hasClass('input-success')){
+            if($(id).hasClass(positiveClass)){
                 //DO NOTHING
             }else{
-                $(id).addClass('input-success');
+                $(id).addClass(positiveClass);
             }
         }
     }else{ //BOOLEAN CHECK ELSE
         //CLASS CHECK 3
-        if($(id).hasClass('input-success')){
-            $(id).removeClass('input-success');
-            if($(id).hasClass('input-error')){
+        if($(id).hasClass(positiveClass)){
+            $(id).removeClass(positiveClass);
+            if($(id).hasClass(negativeClass)){
                 //DO NOTHING
             }else{
-                $(id).addClass('input-error');
+                $(id).addClass(negativeClass);
             }
         }else{ //CLASS CHECK 3 ELSE
-            if($(id).hasClass('input-error')){
+            if($(id).hasClass(negativeClass)){
 
             }else{
-                $(id).addClass('input-error');
+                $(id).addClass(negativeClass);
             }
         }
     }
