@@ -23,5 +23,5 @@ Make sure that the boxId, positiveClass, negativeClass all correspond to correct
                 }
         });
         
-# Example
+# NB
 If you wish to change the class names make sure to update the class names in the styles.css file.
