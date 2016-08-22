@@ -15,8 +15,12 @@ Make sure that the boxId, positiveClass, negativeClass all correspond to correct
 
 
 # Example
-        $('#green').click(function(){
-                addInputBoxColor('box', true, 'input-success', 'input-error');
+        $('#button').click(function(){
+                if(//DO SOME CHECK HERE){
+                        addInputBoxColor('box', true, 'input-success', 'input-error');
+                }else{
+                        addInputBoxColor('box', false, 'input-success', 'input-error');
+                }
         });
         
 # Example
