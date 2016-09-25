@@ -5,31 +5,23 @@
     <title>Input Color Change</title>
 
     <!-- CSS STYLES -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="src/public/css/styles.css">
 
     <!-- JS JQUERY-->
-    <script src="js/jquery.js"></script>
+    <script src="src/public/js/jquery.js"></script>
 
     <!-- JS ADD COLOR INPUT BOX -->
-    <script src="js/addColorInputBox.js"></script>
+    <script src="src/public/js/addColorInputBox.js"></script>
 
     <!-- JS CUSTOM -->
-    <script>
-        $(document).ready(function(){
-            $('#green').click(function(){
-                addInputBoxColor('box', true, 'input-success', 'input-error');
-            });
-
-            $('#red').click(function(){
-                addInputBoxColor('box', false, 'input-success', 'input-error');
-            });
-        });
-    </script>
+    <script src="src/public/js/index.js"></script>
 
 </head>
 <body>
-    <input type="text" value="Some Text" id="box"/><br>
-    <input type="button" value="Green" id="green"><br>
-    <input type="button" value="Red" id="red"/>
+    <div id="wrapper">
+        <input type="text" value="Some Text" id="box"/><br>
+        <input type="button" value="Green" id="green"><br>
+        <input type="button" value="Red" id="red"/>
+    </div>
 </body>
 </html>
