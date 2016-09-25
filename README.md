@@ -23,7 +23,7 @@ This is a prototypal inheritance(object composition) project that changes the in
 
         addColorInputBox.remove();
  
-### addInputBoxColor.create() Arguements
+### create() Arguements
 
 We can pass an optional object of methods and properties that we want to add to our new object here. This is how 
 we use prototypal inheritance(object composition) to create new objects that have the parent addInputBoxColor objects 
