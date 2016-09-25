@@ -34,6 +34,11 @@ var addInputBoxColor = {
         }
     },
 
+    remove: function (boxId, positiveClass, negativeClass) {
+        this.add(boxId, true, '', negativeClass);
+        this.add(boxId, false, positiveClass, '')
+    },
+
     //_render
     _render: function ($id,addClassName, removeClassName) {
         //CLASS CHECK 1
